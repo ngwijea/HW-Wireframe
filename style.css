@@ -2,51 +2,76 @@ header {
     background: #ebebeb;
     text-align: center;
     padding: 20px;
-    margin-bottom: 20-x;
     
+}
+/* Created this class because putting width in body was not working */
+.size {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 nav {
     background: #ebebeb;
     text-align: center;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
 
 }
-
 body {
     font-family: 'Arial','helvetica Neue', Arial, Helvetica, sans-serif;
     color: '#777';
     background: #777;
-    width: '960px';
-    font size:'18px';
+    font-size:'18px';
 }
+
+.container {
+    margin-top: 10px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+section {
+    float: left;
+    width: 495px;
+    background: #ebebeb;
+    text-align: center;
+}
+
 
 article {
     color: #ebebeb;
     background: #777;
-}
-
-section {
-    width: 495px;
-    float: left;
-    width: 48%;
-    padding: 20px;
-    margin-bottom: 20px;}
+    font-size: 12px;
+    font-weight: normal;
+    display:block;
 }
 
 aside {
     background: #ebebeb;
     text-align: center;
+    width: 350px;
     float: left;
-    width: 48%;
-    padding: 20px;
-    margin-bottom: 20px;
+    margin-left: 15px;
+    padding: 50px;
 }
+
 
 h1 {
     color: #777;
     background: #ebebeb;
     font-size: 14px;
     font-weight: normal;
+}
+
+footer {
+    background: #ebebeb;
+    text-align: center;
+    clear: both;
+    padding: 20px;
+    
 }
